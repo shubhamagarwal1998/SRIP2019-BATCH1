@@ -70,7 +70,7 @@ for(i=0; i<=NumLinesY; i++) {
     ctx.stroke();
 }
 // Translate to the new origin. Now Y-axis of the canvas is opposite to the Y-axis of the graph. So the y-coordinate of each element will be negative of the actual
-ctx.translate(Y_Axis_Distance_Grid_Lines*GridSize, XAxisDistanceGridLines*GridSize);
+ctx.translate(YAxisDistanceGridLines*GridSize, XAxisDistanceGridLines*GridSize);
 
 // Ticks marks along the positive X-axis
 for(i=1; i<(NumLinesY - YAxisDistanceGridLines); i++) {
@@ -84,12 +84,12 @@ for(i=1; i<(NumLinesY - YAxisDistanceGridLines); i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(XAxisStartingPoint.number*i, GridSize*i, 15);
 }
 // Ticks marks along the negative X-axis
-for(i=1; i<Y_Axis_Distance_Grid_Lines; i++) {
+for(i=1; i<YAxisDistanceGridLines; i++) {
     ctx.beginPath();
     ctx.lineWidth = 1;
     ctx.strokeStyle = "#000000";
@@ -100,8 +100,8 @@ for(i=1; i<Y_Axis_Distance_Grid_Lines; i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(-XAxisStartingPoint.number*i, -GridSize*i, 15);
 }
 
@@ -118,8 +118,8 @@ for(i=1; i<(NumLinesX - XAxisDistanceGridLines); i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(-YAxisStartingPoint.number*i, -15, (GridSize*i)+3);
 }
 
@@ -136,8 +136,8 @@ for(i=1; i<XAxisDistanceGridLines; i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(YAxisStartingPoint.number*i, -15, -((GridSize*i)+3));
 }
 }
@@ -199,7 +199,7 @@ for(i=0; i<=NumLinesY; i++) {
     ctx.stroke();
 }
 // Translate to the new origin. Now Y-axis of the canvas is opposite to the Y-axis of the graph. So the y-coordinate of each element will be negative of the actual
-ctx.translate(Y_Axis_Distance_Grid_Lines*GridSize, XAxisDistanceGridLines*25);
+ctx.translate(YAxisDistanceGridLines*GridSize, XAxisDistanceGridLines*25);
 
 // Ticks marks along the positive X-axis
 for(i=1; i<(NumLinesY - YAxisDistanceGridLines); i++) {
@@ -213,12 +213,12 @@ for(i=1; i<(NumLinesY - YAxisDistanceGridLines); i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(XAxisStartingPoint.number*i, GridSize*i, 15);
 }
 // Ticks marks along the negative X-axis
-for(i=1; i<Y_Axis_Distance_Grid_Lines; i++) {
+for(i=1; i<YAxisDistanceGridLines; i++) {
     ctx.beginPath();
     ctx.lineWidth = 1;
     ctx.strokeStyle = "#000000";
@@ -229,8 +229,8 @@ for(i=1; i<Y_Axis_Distance_Grid_Lines; i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(-XAxisStartingPoint.number*i, -GridSize*i, 15);
 }
 
@@ -247,8 +247,8 @@ for(i=1; i<(NumLinesX - XAxisDistanceGridLines); i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(-YAxisStartingPoint.number*i, -15, 25*i+3);
 }
 
@@ -265,8 +265,8 @@ for(i=1; i<XAxisDistanceGridLines; i++) {
     ctx.stroke();
 
     // Text value at that point
-    ctx.font = '9px Arial';
-    ctx.textAlign = 'center';
+    ctx.font = "9px Arial";
+    ctx.textAlign = "center";
     ctx.fillText(YAxisStartingPoint.number*i, -15, -25*i+3);
 }
 }
