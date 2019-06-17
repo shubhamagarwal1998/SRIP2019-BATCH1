@@ -53,7 +53,7 @@ var x=document.getElementById("s1").value;
           ctx.clearRect(-GridSize* YAxisDistanceGridLines,-GridSize*XAxisDistanceGridLines,canvas.width,canvas.height);     
           ctx.translate(-GridSize* YAxisDistanceGridLines,-GridSize*XAxisDistanceGridLines);
         }
-      script_for_T2_dataset();
+      ScriptForT2Dataset();
       document.getElementById("t1").value=0;
       document.getElementById("t2").value=0;
       document.getElementById("t3").value=0;
@@ -167,11 +167,11 @@ var x=document.getElementById("s1").value;
       PreviousX=x;
     }  
 }
-function Generate_For_T2_Dataset()
+function GenerateForT2Dataset()
 {
   ctx.clearRect(-GridSize* YAxisDistanceGridLines,-25*XAxisDistanceGridLines,canvas.width,canvas.height);
     ctx.translate(-GridSize* YAxisDistanceGridLines,-25*XAxisDistanceGridLines);
-    Script_For_T2_Dataset();
+    ScriptForT2Dataset();
   var value1=document.getElementById("t1").value;
   var value2=document.getElementById("t2").value;
   var value3=document.getElementById("t3").value;
@@ -707,10 +707,10 @@ function generate()
 }
 else
 {
-  Generate_For_T2_Dataset();
+  GenerateForT2Dataset();
 }
 }
-function mark_all_points()
+function MarkAllPoints()
 {
   var slider_value=document.getElementById("myRange").value;
   var x=document.getElementById("s1").value;
@@ -789,7 +789,7 @@ function mark(event)
  flag2=0;
  markpoints(event);
 }
-function resize_axis() 
+function ResizeAxis() 
 {
   var x=document.getElementById('s1').value;
   if(x==='T2')
@@ -806,8 +806,8 @@ function resize_axis()
 }
 document.getElementById("b1").addEventListener('click',load);
 document.getElementById("b5").addEventListener('click',generate);
-document.getElementById("b3").addEventListener('click',mark_all_points);
+document.getElementById("b3").addEventListener('click',MarkAllPoints);
 document.getElementById("b4").addEventListener('click',Clear);
 document.getElementById("b2").addEventListener('click',mark);
-document.getElementById("b6").addEventListener('click',resize_axis);
+document.getElementById("b6").addEventListener('click',ResizeAxis);
 
