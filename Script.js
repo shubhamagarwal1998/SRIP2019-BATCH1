@@ -141,7 +141,7 @@ for(i=1; i<XAxisDistanceGridLines; i++) {
     ctx.fillText(YAxisStartingPoint.number*i, -15, -((GridSize*i)+3));
 }
 }
-function Script_For_T2_Dataset()
+function ScriptForT2Dataset()
 {
     var i=0;
      ctx.fillStyle="#000000";
@@ -162,8 +162,9 @@ for(i=0; i<=NumLinesX; i++)
         {
             ctx.strokeStyle = "#000000";
         }
-    else
+    else{
         ctx.strokeStyle = "#e9e9e9";
+    }
     
     if(i === NumLinesX) {
         ctx.moveTo(0, 25*i);
