@@ -185,7 +185,7 @@ function GenerateForT2Dataset()
   var value11=document.getElementById("t11").value;
   var value12=document.getElementById("t12").value;
   var digit= /^\d+$/;
-  if((value1!==="" && value1.match(digit)) ||(value2!==="" && value2.match(digit)) ||(value3!==="" && value3.match(digit)) ||(value4!==="" && value4.match(digit)) ||(value5!==="" && value5.match(digit)) ||(value6!==="" && value6.match(digit)) ||(value7!==="" && value7.match(digit)) ||(value8!==="" && value8.match(digit)) ||(value9!==="" && value9.match(digit)) ||(value10!==="" && value10.match(digit)) ||(value11!==="" && value11.match(digit)) ||(value12!==="" && value12.match(digit)) )
+  if((value1!=="" && value1.match(digit)) ||(value2!=="" && value2.match(digit)) ||(value3!=="" && value3.match(digit)) ||(value4!=="" && value4.match(digit)) ||(value5!=="" && value5.match(digit)) ||(value6!=="" && value6.match(digit)) ||(value7!=="" && value7.match(digit)) ||(value8!=="" && value8.match(digit)) ||(value9!=="" && value9.match(digit)) ||(value10!=="" && value10.match(digit)) ||(value11!=="" && value11.match(digit)) ||(value12!=="" && value12.match(digit)) )
   {
    //condition to check whether circle is to be drawn or ellipse.For that the values of major and minor axis is compared.If equal then it is circle otherwise it is ellipse
    //for class 1
@@ -442,7 +442,7 @@ function generate()
 {
   var x=document.getElementById("s1").value;
   flag=1;
-  if(x!==="T2")
+  if(x!=="T2")
   {
     ctx.clearRect(-GridSize* YAxisDistanceGridLines,-GridSize*XAxisDistanceGridLines,canvas.width,canvas.height);
     ctx.translate(-GridSize* YAxisDistanceGridLines,-GridSize*XAxisDistanceGridLines);
