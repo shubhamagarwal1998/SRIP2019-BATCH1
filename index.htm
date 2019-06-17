@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="F:\SRIP Experiment Pattern Recogition\pattern-recognition-iiith\SRIP\Codes\Styles.css">
+<title>Pattern Recognition
+</title>
+</head>
+<body>
+<h1>
+	<center>Bayesian Classification
+	</center>
+</h1>
+<div class="container" onclick="markpoints(event)">
+<canvas id='myChart'  height="600" width="600">
+</canvas>
+</div>
+<script src="F:\SRIP Experiment Pattern Recogition\pattern-recognition-iiith\SRIP\Codes\Script.js" language="javascript" type="text/javascript">
+</script>
+<div class="container2">
+<canvas id="Values" height="50" width="600">
+</canvas>
+<script type="text/javascript"  language="javascript" >
+	var ctx = document.getElementById("Values").getContext('2d');
+	 ctx.fillRect(275,25, 10, 10);
+	 ctx.font = "15px Arial";
+	 ctx.fillText("Class1",290,35);
+	 ctx.fillStyle="Red";
+	 ctx.fillRect(350,25, 10, 10);
+	 ctx.font = "15px Arial";
+	 ctx.fillStyle="Black";
+	 ctx.fillText("Class2",365,35);
+</script>
+</div>
+<script>
+document.write("<br>"+"Load Custom Datasets"+"<br>"+"<br>"+"Dataset");
+</script>
+<select id="s1">
+	<option name="T1" >T1</option>
+	<option name="T2" >T2</option>
+	<option name="T3" >T3</option>
+	<option name="T4" >T4</option>
+</select>
+<button type="button" id="b1">Load</button>
+<br>
+<br>
+Mark Points<br>
+<br>
+<div class="slidecontainer" width="600">
+  <input type="range" min="0" max="600" value="0" class="slider" id="myRange">
+  <p>
+  	<b>
+  	<pre>Class 1												Class 2 </pre>
+  </b>
+</p>
+</div>
+<button type="button" id="b2">Mark</button>
+<button type="button" id="b3">Mark All</button>
+<button type="button" id="b4">Clear</button>
+<br>
+<br>
+Generate Random Values<br>
+<table>
+	<tr>
+		<td></td>
+		<td><b>Class 1</b></td>
+		<td></td>
+		<td><b>Class 2</b></td>
+	</tr>
+	<br>
+	<tr>
+		<td>Mean</td>
+		<td><input type="text" id="t1"></input></td>
+		<td><input type="text" id="t2"></input></td>
+		<td><input type="text" id="t3"></input></td>
+		<td><input type="text" id="t4"></input></td>
+	</tr>
+	<tr>
+		<td>Co-Variance</td>
+		<td><input type="text" id="t5"></input></td>
+		<td><input type="text" id="t6"></input></td>
+		<td><input type="text" id="t7"></input></td>
+		<td><input type="text" id="t8"></input></td>
+	</tr>
+	<tr>
+		<td><button id="b5">Generate</button></td>
+		<td><input type="text" id="t9"></input></td>
+		<td><input type="text" id="t10"></input></td>
+		<td><input type="text" id="t11"></input></td>
+		<td><input type="text" id="t12"></input></td>
+	</tr>	
+	<tr>
+		<td><button id="b6">Resize Axes</button></td>
+	</tr>	
+</table>
+<script type="text/javascript" src="F:\SRIP Experiment Pattern Recogition\pattern-recognition-iiith\SRIP\Codes\Function.js" language="javascript">
+</script>
+</body>
+</html>
